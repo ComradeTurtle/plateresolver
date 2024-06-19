@@ -176,7 +176,7 @@ const resolver = (inp) => {
     if ([
       "ΚΑ", "ΜΚ"
     ].includes(formatted)) {
-      matches.push("Ηράκλειο");
+      matches.push("Καρδίτσα");
     }
 
     if ([
