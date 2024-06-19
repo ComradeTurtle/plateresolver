@@ -8,7 +8,8 @@ const resolver = (inp) => {
   let matches = [];
 
   let formatted = inp.substring(0, 2).toUpperCase();
-
+  let formatted3 = inp.substring(0, 3).toUpperCase();
+  
   if ([
     "ΥΑ", "ΥΒ", "ΥΕ", "ΥΖ", "ΥΗ", "ΖΖ", "ΖΗ", "ΖΚ", "ΖΜ", "ΙΒ", "ΙΕ", "ΙΖ", "ΙΗ", "ΙΚ", "ΙΜ", "ΙΟ", "ΙΡ", "ΙΤ", "ΙΥ", "ΧΕ", "ΧΖ", "ΧΗ", "ΧΡ", "ΧΤ", "ΧΥ", "ΧΧ", "ΗΒ", "ΟΑ", "ΟΒ", "ΟΕ", "ΟΖ", "ΟΗ", "ΟI", "ΟΚ", "ΟΜ", "ΟΝ", "ΟΟ", "ΟΤ", "ΟΥ", "ΟΧ", "ΧΜ", "ΖΕ", "ΖΙ", "ΖΟ"
   ].includes(formatted)) {
@@ -113,7 +114,7 @@ const resolver = (inp) => {
     }
 
     if ([
-        "ΧΑ", "ΧΕ", "ΕΗ", "ΕΙ"
+        "ΧΑ", "ΕΗ", "ΕΙ"
     ].includes(formatted)) {
         matches.push("Εύβοια (Χαλκίδα)");
     }
@@ -185,7 +186,7 @@ const resolver = (inp) => {
     }
 
     if ([
-      "ΚΥ", "ΕΤ", "ΤΒ", "ΤΕ", "ΚΗ"
+      "ΚΥ", "ΕΤ", "ΤΒ", "ΤΕ"
     ].includes(formatted)) {
       matches.push("Κέρκυρα");
     }
@@ -313,9 +314,15 @@ const resolver = (inp) => {
     if ([
       "ΕΡ", "ΙΧ"
     ].includes(formatted)) {
-      matches.push("Τρίκαλα");
+      matches.push("Σέρρες");
     }
 
+    if ([
+      "ΤΝ", "ΤΚ"
+    ].includes(formatted)) {
+      matches.push("Τρίκαλα");
+    }
+  
     if ([
       "ΜΙ", "ΗΥ"
     ].includes(formatted)) {
@@ -353,8 +360,8 @@ const resolver = (inp) => {
     }
 
     if ([
-      "ΚΟ"
-    ].includes(formatted)) {
+      "ΚΟΚ"
+    ].includes(formatted3)) {
       matches.push("Θεσσαλονίκη (Κατ' εξαίρεση)");
     }
 
